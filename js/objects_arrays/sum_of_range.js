@@ -41,12 +41,12 @@ var rangeStep = function(start, end, step) {
 	var results = [];
 
 	if(end > start) {
-		for(var i = start; i <= end; i = i + step) {
+		for(var i = start; i <= end; i += step) {
 		  //console.log('start index ', i);
 		  results.push(i);
 		} 
 	} else {
-	  	for (var j = start; j >= end; j = j + step) {
+	  	for (var j = start; j >= end; j += step) {
 	  	 results.push(j);
 	  	}
 	}
